@@ -11,6 +11,7 @@ import heroStyles from "./Hero.styles";
 import VerticalAlignBottomIcon from "@mui/icons-material/VerticalAlignBottom";
 import AboutImg from "../../../assets/MK-White.png";
 import Logo from "../../../assets/MK.png";
+import CV from "../../../assets/CV/Mhmd-Khazaa-FrontEnd.pdf";
 
 const HeroSection = () => {
   return (
@@ -49,10 +50,24 @@ const HeroSection = () => {
                 Building Scalable Modern Websites for the Future
               </Typography>
               <Box sx={heroStyles.buttonsContainer}>
-                <Button variant="contained" sx={heroStyles.downloadButton}>
+                {/* <Button variant="contained" sx={heroStyles.downloadButton}>
+                  Download CV <VerticalAlignBottomIcon />
+                </Button> */}
+                <Button
+                  variant="contained"
+                  sx={heroStyles.downloadButton}
+                  component="a"
+                  href={CV}
+                  download="Mohammed_Khazaa_CV.pdf"
+                >
                   Download CV <VerticalAlignBottomIcon />
                 </Button>
-                <Button variant="outlined" sx={heroStyles.scrollButton}>
+
+                <Button
+                  href="#about"
+                  variant="outlined"
+                  sx={heroStyles.scrollButton}
+                >
                   Scroll down <VerticalAlignBottomIcon />
                 </Button>
               </Box>
