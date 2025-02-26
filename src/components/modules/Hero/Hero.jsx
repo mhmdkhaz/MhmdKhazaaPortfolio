@@ -50,9 +50,6 @@ const HeroSection = () => {
                 Building Scalable Modern Websites for the Future
               </Typography>
               <Box sx={heroStyles.buttonsContainer}>
-                {/* <Button variant="contained" sx={heroStyles.downloadButton}>
-                  Download CV <VerticalAlignBottomIcon />
-                </Button> */}
                 <Button
                   variant="contained"
                   sx={heroStyles.downloadButton}
